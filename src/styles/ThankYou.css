@@ -1,0 +1,27 @@
+
+.thank-you-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-card h2 {
+    color: #2c3e50;
+}
+
+.thank-you-card p {
+    color: #34495e;
+}
+
+.thank-you-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.thank-you-card li {
+    margin: 0.5rem 0;
+    font-weight: 500;
+    color: #27ae60; 
+}
