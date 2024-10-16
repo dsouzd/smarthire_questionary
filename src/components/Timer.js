@@ -1,5 +1,6 @@
 // src/components/Timer.js
 import React from 'react';
+import '../styles/Exam.css';
 
 const Timer = ({ timeLeft }) => {
     const formatTime = (time) => {
@@ -9,7 +10,7 @@ const Timer = ({ timeLeft }) => {
     };
 
     return (
-        <div className="alert alert-info text-center">
+        <div className="alert alert-info text-center bg-color-secondary">
             <h3>Time Left: {formatTime(timeLeft)}</h3>
         </div>
     );

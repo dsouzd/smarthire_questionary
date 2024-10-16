@@ -1,7 +1,7 @@
 // src/utils/api.js
 import axios from 'axios';
 
-const BASE_URL = 'https://smarthire-hvsy.onrender.com';
+const BASE_URL = 'http://localhost:3000/';
 
 export const loginUser = async (username, password) => {
     try {

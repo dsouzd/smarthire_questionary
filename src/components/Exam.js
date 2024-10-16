@@ -86,7 +86,7 @@ const Exam = ({ userDetails, examStarted, onStartExam, onSubmit }) => {
                 <>
                     <Timer timeLeft={timeLeft} />
 
-                    <Alert variant="info" className="text-center">
+                    <Alert variant="info" className="text-center bg-color-secondary">
                         <strong>Instructions:</strong> Please select the correct answer for each question. You have 1 hour to complete the exam. 
                         Your progress will be saved automatically. The exam will be submitted once the time runs out or when you click "Submit Exam."
                     </Alert>
@@ -104,7 +104,7 @@ const Exam = ({ userDetails, examStarted, onStartExam, onSubmit }) => {
                             />
                         ))}
 
-                        <button type="submit" className="btn btn-success w-100 mt-4">
+                        <button type="submit" className="btn btn-success w-100 mb-5 bg-color">
                             Submit Exam
                         </button>
                     </form>

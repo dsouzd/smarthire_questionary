@@ -15,7 +15,7 @@ const ThankYou = () => {
                     We appreciate your time and effort in completing the exam.
                 </p>
                 <p>
-                    Our HR team will review your responses and get in touch with you shortly.
+                    HR team will review your responses and get in touch with you shortly.
                 </p>
                 <p>
                     If you have any questions, feel free to reach out to our support team.

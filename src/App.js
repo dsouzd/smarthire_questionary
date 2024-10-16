@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Login from './components/Login';
 import Exam from './components/Exam';
 import ThankYou from './components/ThankYou';
+import NavigationBar from './components/Navbar';
 import { getStoredSession, clearStorage } from './utils/storage';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
 
     return (
         <div>
+            <NavigationBar />
             {userDetails ? (
                 submitted ? (
                     <ThankYou />
