@@ -77,22 +77,25 @@ const Exam = ({ userDetails, examStarted, onStartExam, onSubmit }) => {
             console.error('Failed to submit answers', error);
         }
     };
-
     return (
         <div className="container mt-5">
             <h2 className="text-center mb-4">Welcome, {userDetails.name}!</h2>
-
+    
             {examStarted ? (
                 <>
-                    <Timer timeLeft={timeLeft} />
-
-                    <Alert variant="info" className="text-center bg-color-secondary">
-                        <strong>Instructions:</strong> Please select the correct answer for each question. You have 1 hour to complete the exam. 
-                        Your progress will be saved automatically. The exam will be submitted once the time runs out or when you click "Submit Exam."
-                    </Alert>
-
-                    <ProgressBar now={progress} label={`${Math.round(progress)}% Completed`} className="mb-4" />
-
+                        <Timer timeLeft={timeLeft} />
+                        
+                        <Alert variant="info" className="text-center bg-color-secondary">
+                            <strong>Instructions:</strong> Please select the correct answer for each question. You have 1 hour to complete the exam. 
+                            Your progress will be saved automatically. The exam will be submitted once the time runs out or when you click "Submit Exam."
+                        </Alert>
+                    <div className="sticky-progress-bar">
+                        <ProgressBar 
+                            now={progress} 
+                            label={`${Math.round(progress)}% Completed`} 
+                            className="mb-4" 
+                        />
+                    </div>
                     <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
                         {questions.map((q, index) => (
                             <Question
